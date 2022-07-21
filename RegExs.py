@@ -1,5 +1,3 @@
-import traceback
-
 
 import traceback
 
@@ -52,4 +50,3 @@ if x:
     print("valid")
 else:
     print("not valid")
-

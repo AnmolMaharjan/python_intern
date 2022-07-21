@@ -3,6 +3,7 @@
 
 from datetime import date, datetime, timedelta, time, timezone
 
+
 date_1 = date(2000, 10, 11)
 date_2 = date(year=2000, month=10, day=11)
 date_3 = date.today()
@@ -56,3 +57,30 @@ print(f'd1 = {d2}')
 print(f'tz1 = {tz1}')
 
 # %%
+
+import datetime
+
+y = datetime.datetime.now()
+print(y)
+print(y.year)
+print(y.strftime("%A"))         # Weekday(Sunday)
+print(y.strftime("%X"))         # Local Time
+print(y.strftime("%d"))         # Day of month 0-31
+print(y.strftime("%m"))         # Month as a number 01-12
+print(y.strftime("%Y"))         # Year
+print(y.strftime("%H"))         # Hour 0-24
+print(y.strftime("%p"))         # AM/PM
+print(y.strftime("%M"))         # Minute
+print(y.strftime("%S"))         # Second
+print(y.strftime("%f"))         # Microsecond
+print(y.strftime("%z"))         # UTC offset
+print(y.strftime("%Z"))         # Timezone
+print(y.strftime("%c"))         # Local version of date and time
+print(y.strftime("%x"))         # Local version of date
+print(y.strftime("%X"))         # Local version of time
+
+x = datetime.datetime(2020, 5, 17)
+print(x)
+
+z = datetime.date.today()
+print(z)
